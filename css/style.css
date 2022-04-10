@@ -12,13 +12,13 @@ p,
 h1,
 h2,
 h3 {
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 ul,
 ol {
   margin: 0;
-  padding-left: 0;
 }
 
 body {
@@ -35,13 +35,17 @@ a {
 }
 
 .container {
-  width: 1600px;
+  width: 1200px;
   padding-right: 15px;
   padding-left: 15px;
-  margin: 0 auto;
+  text-align: center;
 }
 
 /*------------------HEADER-----------------*/
+
+.header {
+  margin-top: 0;
+}
 
 .header-logo {
   font-family: Raleway, sans-serif;
@@ -50,8 +54,8 @@ a {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--logo-color);
-  padding-top: 24px;
-  padding-bottom: 25px;
+  margin-top: 24px;
+  margin-bottom: 25px;
 }
 
 .logo-header-part {
@@ -64,8 +68,8 @@ a {
   line-height: 1.33;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
-  padding-top: 32px;
-  padding-bottom: 32px;
+  margin-top: 32px;
+  margin-bottom: 32px;
 }
 .header-link:hover,
 .header-link:focus,
@@ -89,16 +93,19 @@ a {
 
 /*-------------------------HERO-----------------------*/
 
+.hero {
+  background-color: var(--footer-bg-color);
+  text-align: center;
+}
 .hero-title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--primary-bg-color);
-  width: 696px;
   margin-bottom: 30px;
+  width: 696px;
 }
 .hero-btn {
   cursor: pointer;
@@ -106,24 +113,21 @@ a {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  text-align: center;
   letter-spacing: 0.06em;
   color: var(--primary-bg-color);
   background-color: var(--accent-color);
+  padding: 10px 32px;
+  min-width: 200px;
 }
 .hero-btn:hover,
 .hero-btn:focus {
   background-color: var(--hover-color);
 }
-.hero {
-  background-color: var(--footer-bg-color);
-  width: 1600px;
-  margin: 200px 452px 200px 452px;
-}
 
 /*------------------------NEXT-------------------------*/
 .next {
-  margin: 94px 215px 94px 215px;
+  padding-top: 94px;
+  padding-bottom: 94px;
   border: 1px solid #000000;
 }
 .next-other-title {
@@ -133,18 +137,13 @@ a {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primary-text-color);
-  width: 270px;
-}
-.next-item {
   margin-bottom: 10px;
 }
-
 .next-after-title {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
-  padding-bottom: 10px;
   width: 270px;
 }
 
@@ -165,10 +164,12 @@ a {
 /*-----------------------AFTER----------------------*/
 
 .after {
-  margin: 94px 215px 94px 215px;
+  text-align: center;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .after-main-title {
-  margin: 50px;
+  margin-bottom: 50px;
 }
 
 /*-----------------------TITLE----------------------*/
@@ -183,9 +184,10 @@ a {
 /*-----------------------ABOUT----------------------*/
 .about {
   background-color: var(--secondary-bg-color);
-  width: 1600px;
-  margin: 186px 215px 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
   border: 1px solid #000000;
+  text-align: center;
 }
 
 .about-main-title {
@@ -198,27 +200,30 @@ a {
   margin-bottom: 50px;
 }
 
+.about-item {
+  margin-bottom: 30px;
+}
+
 .about-other-title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
-  padding-top: 30px;
+  margin-bottom: 10px;
 }
 .about-after-title {
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
-  padding-top: 10px;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
 /*-----------------------FOOTER-----------------------*/
 .footer {
   background-color: var(--footer-bg-color);
-  width: 1600px;
-  margin: 60px 1154px 60px 215px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .footer-logo {
   font-weight: 700;
