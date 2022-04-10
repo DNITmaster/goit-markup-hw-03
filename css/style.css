@@ -48,28 +48,39 @@ a {
 }
 
 .header-logo {
+  margin-top: 24px;
+  margin-bottom: 25px;
+
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--logo-color);
-  margin-top: 24px;
-  margin-bottom: 25px;
 }
 
 .logo-header-part {
   color: var(--accent-color);
 }
 
+.header-list {
+  display: flex;
+}
+
+.header-item + .header-item {
+  margin-left: 50px;
+}
+
 .header-link {
+  display: block;
+  margin-top: 32px;
+  margin-bottom: 32px;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.33;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
-  margin-top: 32px;
-  margin-bottom: 32px;
 }
 .header-link:hover,
 .header-link:focus,
@@ -98,16 +109,20 @@ a {
   text-align: center;
 }
 .hero-title {
+  margin-bottom: 30px;
+  width: 696px;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--primary-bg-color);
-  margin-bottom: 30px;
-  width: 696px;
 }
 .hero-btn {
+  padding: 10px 32px;
+  min-width: 200px;
+
   cursor: pointer;
   font-family: Roboto, sans-serif;
   font-weight: 700;
@@ -116,8 +131,6 @@ a {
   letter-spacing: 0.06em;
   color: var(--primary-bg-color);
   background-color: var(--accent-color);
-  padding: 10px 32px;
-  min-width: 200px;
 }
 .hero-btn:hover,
 .hero-btn:focus {
@@ -131,20 +144,22 @@ a {
   border: 1px solid #000000;
 }
 .next-other-title {
+  margin-bottom: 10px;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primary-text-color);
-  margin-bottom: 10px;
 }
 .next-after-title {
+  width: 270px;
+
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
-  width: 270px;
 }
 
 .about-next-title {
@@ -191,13 +206,14 @@ a {
 }
 
 .about-main-title {
+  margin-bottom: 50px;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
-  margin-bottom: 50px;
 }
 
 .about-item {
@@ -205,19 +221,21 @@ a {
 }
 
 .about-other-title {
+  margin-bottom: 10px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
-  margin-bottom: 10px;
 }
 .about-after-title {
+  margin-bottom: 30px;
+
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
-  margin-bottom: 30px;
 }
 /*-----------------------FOOTER-----------------------*/
 .footer {
@@ -226,12 +244,13 @@ a {
   padding-bottom: 60px;
 }
 .footer-logo {
+  margin-bottom: 20px;
+
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--accent-color);
-  margin-bottom: 20px;
 }
 .footer-after-title {
   font-size: 14px;
