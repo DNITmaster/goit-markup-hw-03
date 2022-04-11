@@ -18,6 +18,7 @@ h3 {
 ul,
 ol {
   margin: 0;
+  padding-left: 0;
 }
 
 body {
@@ -33,6 +34,11 @@ body {
 }
 a {
   text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
 }
 
 .container {
@@ -118,6 +124,8 @@ a {
 .hero {
   background-color: var(--footer-bg-color);
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 .hero-title {
   margin-bottom: 30px;
@@ -164,13 +172,16 @@ a {
   color: var(--primary-text-color);
 }
 
-.next-list {
-  display: flex;
-  margin-left: -30px;
+.next.section {
+  padding-bottom: 0;
 }
 
-.next-item {
-  width: calc(100% / 3 - 30px);
+.container .next-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.next-list .next-item + .next-item {
   margin-left: 30px;
 }
 
@@ -201,15 +212,13 @@ a {
 
 .after {
   text-align: center;
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 .after-list {
   display: flex;
 }
 
-.after-item + .after-item {
+.after-list .after-item + .after-item {
   margin-left: 30px;
 }
 
@@ -251,8 +260,13 @@ a {
   display: flex;
 }
 
+.team-text-part {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: var(--primary-bg-color);
+}
+
 .about-other-title {
-  margin-top: 30px;
   margin-bottom: 10px;
 
   font-weight: 500;
@@ -262,8 +276,6 @@ a {
   color: var(--primary-text-color);
 }
 .about-after-title {
-  margin-bottom: 30px;
-
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
@@ -272,8 +284,11 @@ a {
 /*-----------------------FOOTER-----------------------*/
 .footer {
   background-color: var(--footer-bg-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .footer-logo {
+  display: block;
   margin-bottom: 20px;
 
   font-weight: 700;
@@ -282,6 +297,11 @@ a {
   letter-spacing: 0.03em;
   color: var(--accent-color);
 }
+
+.footer-item {
+  margin-bottom: 9px;
+}
+
 .footer-after-title {
   font-size: 14px;
   line-height: 1.71;
@@ -305,8 +325,18 @@ a {
 }
 
 /*------------------------PORTFOLIO-------------------------*/
+.portfolio.section {
+  padding-bottom: 34px;
+}
+.container .portfolio-list {
+  display: flex;
+  justify-content: center;
+}
 
 .portfolio-btn {
+  border-radius: 4px;
+  padding: 6px 22px;
+
   cursor: pointer;
   font-family: Roboto, sans-serif;
   font-weight: 500;
@@ -317,11 +347,23 @@ a {
   color: var(--primary-text-color);
 }
 
+.portfolio-items + .portfolio-items {
+  margin-left: 8px;
+}
+
 .portfolio-btn:hover,
 .portfolio-btn:focus,
 .current-btn {
   color: var(--primary-bg-color);
   background-color: var(--accent-color);
+}
+.next-gallery {
+  padding-top: 0;
+}
+
+.about-next + .about-next {
+  margin-left: 30px;
+  margin-bottom: 30px;
 }
 /*------------------------FOOTER-------------------------*/
 
