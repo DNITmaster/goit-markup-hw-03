@@ -12,8 +12,7 @@ p,
 h1,
 h2,
 h3 {
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0;
 }
 
 ul,
@@ -22,6 +21,8 @@ ol {
 }
 
 body {
+  margin: 0;
+
   background-color: var(--primary-bg-color);
   color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
@@ -38,18 +39,24 @@ a {
   width: 1200px;
   padding-right: 15px;
   padding-left: 15px;
-  text-align: center;
+  margin: 0 auto;
+  outline: 2px solid #21aa06;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 /*------------------HEADER-----------------*/
 
-.header {
-  margin-top: 0;
+.header .container {
+  display: flex;
+  align-items: center;
 }
 
 .header-logo {
-  margin-top: 24px;
-  margin-bottom: 25px;
+  margin-right: 93px;
 
   font-family: Raleway, sans-serif;
   font-weight: 700;
@@ -67,8 +74,12 @@ a {
   display: flex;
 }
 
-.header-item + .header-item {
-  margin-left: 50px;
+.header-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.header-connect {
+  margin-left: auto;
 }
 
 .header-link {
@@ -111,6 +122,8 @@ a {
 .hero-title {
   margin-bottom: 30px;
   width: 696px;
+  margin-right: auto;
+  margin-left: auto;
 
   font-weight: 900;
   font-size: 44px;
@@ -120,8 +133,9 @@ a {
   color: var(--primary-bg-color);
 }
 .hero-btn {
-  padding: 10px 32px;
+  height: 50px;
   min-width: 200px;
+  border-radius: 4px;
 
   cursor: pointer;
   font-family: Roboto, sans-serif;
@@ -138,11 +152,7 @@ a {
 }
 
 /*------------------------NEXT-------------------------*/
-.next {
-  padding-top: 94px;
-  padding-bottom: 94px;
-  border: 1px solid #000000;
-}
+
 .next-other-title {
   margin-bottom: 10px;
 
@@ -153,7 +163,18 @@ a {
   text-transform: uppercase;
   color: var(--primary-text-color);
 }
-.next-after-title {
+
+.next-list {
+  display: flex;
+  margin-left: -30px;
+}
+
+.next-item {
+  width: calc(100% / 3 - 30px);
+  margin-left: 30px;
+}
+
+.next-list .next-after-title {
   width: 270px;
 
   font-size: 14px;
@@ -183,6 +204,15 @@ a {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+
+.after-list {
+  display: flex;
+}
+
+.after-item + .after-item {
+  margin-left: 30px;
+}
+
 .after-main-title {
   margin-bottom: 50px;
 }
@@ -199,9 +229,6 @@ a {
 /*-----------------------ABOUT----------------------*/
 .about {
   background-color: var(--secondary-bg-color);
-  padding-top: 94px;
-  padding-bottom: 94px;
-  border: 1px solid #000000;
   text-align: center;
 }
 
@@ -216,11 +243,16 @@ a {
   color: var(--primary-text-color);
 }
 
-.about-item {
-  margin-bottom: 30px;
+.about-item + .about-item {
+  margin-left: 30px;
+}
+
+.about-list {
+  display: flex;
 }
 
 .about-other-title {
+  margin-top: 30px;
   margin-bottom: 10px;
 
   font-weight: 500;
@@ -240,8 +272,6 @@ a {
 /*-----------------------FOOTER-----------------------*/
 .footer {
   background-color: var(--footer-bg-color);
-  padding-top: 60px;
-  padding-bottom: 60px;
 }
 .footer-logo {
   margin-bottom: 20px;
