@@ -147,6 +147,7 @@ img {
   height: 50px;
   min-width: 200px;
   border-radius: 4px;
+  border: 1px solid transparent;
 
   cursor: pointer;
   font-family: Roboto, sans-serif;
@@ -356,6 +357,7 @@ img {
 .portfolio-btn {
   border-radius: 4px;
   padding: 6px 22px;
+  border: 1px solid transparent;
 
   cursor: pointer;
   font-family: Roboto, sans-serif;
