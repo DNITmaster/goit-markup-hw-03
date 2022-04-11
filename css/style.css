@@ -7,11 +7,15 @@
   --secondary-bg-color: #f5f4fa;
   --footer-bg-color: #2f303a;
   --logo-color: #000000;
+  --project-color: #eeeeee;
 }
 p,
 h1,
 h2,
-h3 {
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
 }
 
@@ -46,7 +50,6 @@ img {
   padding-right: 15px;
   padding-left: 15px;
   margin: 0 auto;
-  outline: 2px solid #21aa06;
 }
 
 .section {
@@ -185,7 +188,7 @@ img {
   margin-left: 30px;
 }
 
-.next-list .next-after-title {
+.next-after-title {
   width: 270px;
 
   font-size: 14px;
@@ -264,6 +267,9 @@ img {
   padding-top: 30px;
   padding-bottom: 30px;
   background-color: var(--primary-bg-color);
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
 }
 
 .about-other-title {
@@ -295,10 +301,14 @@ img {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: var(--accent-color);
+  color: var(--primary-bg-color);
 }
 
-.footer-item {
+.footer-adress {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--primary-bg-color);
   margin-bottom: 9px;
 }
 
@@ -315,12 +325,16 @@ img {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
+.footer-adress:hover,
+.footer-adress:focus,
 .footer-mail:hover,
-.footer-mail:focus {
-  color: var(--accent-color);
-}
+.footer-mail:focus,
 .footer-tel:hover,
 .footer-tel:focus {
+  color: var(--accent-color);
+}
+
+.logo-footer-part {
   color: var(--accent-color);
 }
 
@@ -331,6 +345,12 @@ img {
 .container .portfolio-list {
   display: flex;
   justify-content: center;
+}
+
+.next-gallery-list {
+  cursor: pointer;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .portfolio-btn {
@@ -347,6 +367,22 @@ img {
   color: var(--primary-text-color);
 }
 
+.team-project-text {
+  padding-top: 20px;
+  padding-right: 24px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+
+  background-color: var(--primary-bg-color);
+  border-right: 1px solid var(--project-color);
+  border-bottom: 1px solid var(--project-color);
+  border-left: 1px solid var(--project-color);
+}
+
+.about-next-title {
+  margin-bottom: 4px;
+}
+
 .portfolio-items + .portfolio-items {
   margin-left: 8px;
 }
@@ -361,47 +397,7 @@ img {
   padding-top: 0;
 }
 
-.about-next + .about-next {
-  margin-left: 30px;
+.about-next {
+  margin-right: 30px;
   margin-bottom: 30px;
-}
-/*------------------------FOOTER-------------------------*/
-
-.footer {
-  background-color: var(--footer-bg-color);
-}
-.footer-logo {
-  font-family: Raleway, sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: var(--primary-bg-color);
-}
-
-.footer-adress {
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: var(--primary-bg-color);
-}
-.footer-mail,
-.footer-tel {
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.footer-adress:hover,
-.footer-adress:focus,
-.footer-mail:hover,
-.footer-mail:focus,
-.footer-tel:hover,
-.footer-tel:focus {
-  color: var(--accent-color);
-}
-
-.logo-footer-part {
-  color: var(--accent-color);
 }
